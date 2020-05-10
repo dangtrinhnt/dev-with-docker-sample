@@ -6,8 +6,8 @@ WORKDIR /keycloak_flask
 
 COPY . /keycloak_flask
 
-ENV FLASK_APP=keycloak_flask.user
-ENV FLASK_DEBUG=1
+ENV FLASK_APP=apps.keycloak_flask.user
+#ENV FLASK_DEBUG=1
 ENV KEYCLOAK_FLASK_SETTINGS=local_settings.py
 
 RUN pip install -r requirements.txt
